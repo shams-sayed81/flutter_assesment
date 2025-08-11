@@ -1,16 +1,33 @@
-# flutter_assesment
+A Flutter app featuring an Onboarding flow followed by a product list fetched from a remote API.
+Users can tap on any product to view detailed information on a separate screen.
 
-A new Flutter project.
+Features
+Multi-page Onboarding screen with progress indicators.
 
-## Getting Started
+Localization support via easy_localization.
 
-This project is a starting point for a Flutter application.
+Fetch product list from a REST API.
 
-A few resources to get you started if this is your first Flutter project:
+Navigate to product detail screen with more information.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Navigation managed with go_router.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Responsive UI using flutter_screenutil.
+
+Smooth animated page indicators.
+
+Tech Stack
+Flutter & Dart
+
+easy_localization (multilingual support)
+
+go_router (navigation)
+
+flutter_screenutil (responsive UI)
+
+dio (HTTP client for API requests)
+
+smooth_page_indicator (onboarding indicators)
+
+cubit for state management 
+
