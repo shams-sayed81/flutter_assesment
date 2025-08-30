@@ -20,8 +20,7 @@ import '../../../features/product%20list/data/repositories/products_repo.dart'
     as _i430;
 import '../../../features/product%20list/domain/repositories/products_repo_impl.dart'
     as _i362;
-import '../../../features/product%20list/domain/use_cases/products_use_case.dart'
-    as _i585;
+
 import '../../cubit/products_view_model_cubit.dart' as _i948;
 import '../api_manager.dart' as _i1069;
 
@@ -41,11 +40,9 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i430.ProductsRepo>(
       () => _i362.ProductsRepoImpl(gh<_i969.ProductsDataSource>()),
     );
-    gh.factory<_i585.ProductsUseCase>(
-      () => _i585.ProductsUseCase(gh<_i430.ProductsRepo>()),
-    );
+
     gh.factory<_i948.ProductsViewModelCubit>(
-      () => _i948.ProductsViewModelCubit(gh<_i585.ProductsUseCase>()),
+      () => _i948.ProductsViewModelCubit(gh<_i430.ProductsRepo>()),
     );
     return this;
   }
