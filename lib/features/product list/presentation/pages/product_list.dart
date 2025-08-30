@@ -1,16 +1,18 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_assesment/core/strings_manger.dart';
+import 'package:flutter_assesment/core/helpers/strings_manger.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../core/colors_manager.dart';
+import '../../../../core/cubit/products_view_model_cubit.dart';
+import '../../../../core/helpers/colors_manager.dart';
 import '../../../../core/remote/Di/di.dart';
-import '../manager/products_view_model_cubit.dart';
 import '../widgets/product_item.dart';
 
 class ProductList extends StatelessWidget {
+  static const String routeName ='/productList';
+
   const ProductList({super.key});
 
   @override

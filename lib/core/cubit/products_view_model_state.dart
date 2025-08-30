@@ -1,6 +1,5 @@
 part of 'products_view_model_cubit.dart';
 
-@immutable
 sealed class ProductsViewModelState {}
 
 final class ProductsViewModelInitial extends ProductsViewModelState {}

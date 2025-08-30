@@ -4,11 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../core/colors_manager.dart';
-import '../../../core/strings_manger.dart';
+import '../../../core/helpers/colors_manager.dart';
+import '../../../core/helpers/strings_manger.dart';
 import '../../product list/data/models/ProductResponse.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
+  static const String routeName ='/productDetails';
+
   const ProductDetailsScreen({super.key, required ProductResponse product});
 
   @override

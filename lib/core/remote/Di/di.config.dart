@@ -22,9 +22,10 @@ import '../../../features/product%20list/domain/repositories/products_repo_impl.
     as _i362;
 import '../../../features/product%20list/domain/use_cases/products_use_case.dart'
     as _i585;
-import '../../../features/product%20list/presentation/manager/products_view_model_cubit.dart'
-    as _i948;
+import '../../cubit/products_view_model_cubit.dart' as _i948;
 import '../api_manager.dart' as _i1069;
+
+
 
 extension GetItInjectableX on _i174.GetIt {
   // initializes the registration of main-scope dependencies inside of GetIt

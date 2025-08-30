@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_assesment/core/colors_manager.dart';
+import 'package:flutter_assesment/core/helpers/colors_manager.dart';
 import 'package:flutter_assesment/features/product%20list/data/models/ProductResponse.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

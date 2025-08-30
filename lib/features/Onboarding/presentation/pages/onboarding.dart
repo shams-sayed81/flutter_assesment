@@ -1,18 +1,20 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_assesment/core/strings_manger.dart';
+import 'package:flutter_assesment/core/helpers/strings_manger.dart';
 import 'package:flutter_assesment/features/Onboarding/presentation/widgets/toggle.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../../../../core/assets_manager.dart';
-import '../../../../core/colors_manager.dart';
+import '../../../../core/helpers/assets_manager.dart';
+import '../../../../core/helpers/colors_manager.dart';
 import '../../../../core/model/onboarding.dart';
-import '../../../../core/pref_helper.dart';
+import '../../../../core/helpers/pref_helper.dart';
 import '../widgets/onboarding_item.dart';
 
 class Onboarding extends StatefulWidget {
+  static const String routeName ='/onboarding';
+
   const Onboarding({super.key});
 
   @override
@@ -21,11 +23,7 @@ class Onboarding extends StatefulWidget {
 }
 
 class _OnboardingState extends State<Onboarding> {
-   List<OnboardingModel> onboardingList =[
-    OnboardingModel(title: StringsManager.onboardTitle1.tr(), path: AssetsManager.onboarding1),
-    OnboardingModel(title: StringsManager.onboardTitle2.tr(), path: AssetsManager.onboarding2,) ,
 
-  ];
   int index =0;
   PageController controller =PageController();
 
@@ -38,6 +36,11 @@ class _OnboardingState extends State<Onboarding> {
   }
   @override
   Widget build(BuildContext context) {
+    List<OnboardingModel> onboardingList =[
+      OnboardingModel(title: StringsManager.onboardTitle1.tr(), path: AssetsManager.onboarding1),
+      OnboardingModel(title: StringsManager.onboardTitle2.tr(), path: AssetsManager.onboarding2,) ,
+
+    ];
     return SafeArea(
         child: Scaffold(
           backgroundColor: ColorsManager.primary,

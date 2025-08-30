@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_assesment/core/routes_manger/routes.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'core/pref_helper.dart';
+import 'core/helpers/pref_helper.dart';
 import 'core/remote/Di/di.dart';
 
 void main()async {
@@ -11,14 +11,14 @@ void main()async {
   await EasyLocalization.ensureInitialized();
 
   await PrefHelper.init();
-
+  configureDependencies();
   runApp(EasyLocalization(
       supportedLocales: [Locale('en'), Locale('ar')],
       path: 'assets/translations',
       fallbackLocale: Locale('en'),
       child: MyApp()
   ),);
-  configureDependencies();
+
 
 
 

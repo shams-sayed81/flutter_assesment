@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_assesment/core/colors_manager.dart';
+import 'package:flutter_assesment/core/helpers/colors_manager.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/model/onboarding.dart';
